@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="UTF-8">
+	<title>ZF Quickstart</title>
+	<?php echo $this->headLink()->appendStylesheet('/css/master.css'); ?>
+</head>
+<body>
+	<div id="header" style="background-color: #EEEEEE; height: 30px;">
+	    <div id="header-logo" style="float: left">
+	        <b>ZF Quickstart Application</b>
+	    </div>
+	    <div id="header-navigation" style="float: right">
+	        <a href="<?php echo $this->url( array('controller'=>'guestbook'), 'default', true ); ?>">Guestbook</a>
+	    </div>
+	</div>
+
+	<?php echo $this->layout()->content; ?>
+
+</body>
+</html>
